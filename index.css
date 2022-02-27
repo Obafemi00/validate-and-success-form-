@@ -1,0 +1,283 @@
+/* To position the whole window properly */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* To align and position the navbar properly by using flex */
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* Giving the logo specifications */
+}
+img.my_logo {
+  height: 34px;
+  width: 100px;
+}
+
+/* aligning and giving the social media icons specifications */
+.social_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.facebook,
+.twitter,
+.instagram {
+  padding: 0px 10px;
+}
+
+/* Specifying for the remaining part of the window asides the navbar */
+section {
+  background-color: rgb(235, 235, 235);
+}
+
+/* Specifying for the Accont Settings Header  */
+.subHeader {
+  padding-bottom: 20px;
+}
+.accountSettings {
+  font-weight: 500;
+  padding: 30px 10px 30px 60px;
+}
+
+/* The small and the h4 is present in all three sections. Specifying
+here */
+small {
+  font-size: 0.6em;
+}
+h4 {
+  font-weight: 500;
+}
+
+/* The first section had to be flexed . This is for the first section */
+.basicsSection {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 40px;
+} 
+.basics,
+.Profile,
+.Notifications {
+  width: 50vw;
+  padding: 0px 10em;
+  height: 10px;
+}
+.firstFormGroupDiv {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+/* This is to align the second section */
+.profileSection {
+  display: flex;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+/* This is specify and align the full name container */
+.fullName {
+  display: grid;
+}
+.firstName {
+  padding-bottom: 20px;
+}
+.firstName,
+.lastName {
+  display: flex;
+  flex-direction: column;
+}
+
+/* This is done to place the label on top of the input */
+.picture,
+.username,
+.aboutyou {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The form class is in all three sections. It is on the left hand side. This is to 
+specify the viewport it should always cover */
+.form {
+  width: 100%;
+} 
+
+/* This is to specify the input,label and select elements  and others*/
+label {
+  font-size: 0.7em;
+}
+input,
+select {
+  width: 25em;
+  height: 2.5em;
+  transition: all 0.5s ease;
+}
+input[type="button"] {
+  border: 1px rgb(50, 103, 179) solid;
+  width: 200px;
+}
+input[type="button"]:hover {
+  background-color: rgb(50, 103, 179);
+  color: white;
+  border: 1px white solid;
+}
+textarea {
+  width: 25em;
+}
+.inputGroup {
+  padding-bottom: 20px;
+}
+
+
+/* This is for the last Section */
+.notificationsSection {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.thirdFormGroup {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+} 
+ .checkbox > label {
+margin-left: 1.5em;
+} 
+.checkbox > input {
+  align-self: center;
+  }
+.checkbox1, .checkbox2, .checkbox3 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:flex-end;
+  padding-bottom: 20px;
+} 
+.New, .Meetups, .AccountActivity {
+  font-size: medium;
+}
+ input[type="checkbox"] {
+  width: 1.5em;
+  height: 1.5em;
+} 
+.finalButton {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+label.error {
+  color: red;
+  font-weight: 600;
+  display: block;
+}
+
+button {
+  padding: 8px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10em;
+}
+
+.saveSettings {
+  color: white;
+  background-color: rgb(50, 103, 179);
+  border: 1px solid white;
+}
+.saveSettings:hover {
+  color: white;
+  border: 1px solid black;
+}
+
+.cancel {
+  color: rgb(50, 103, 179);
+  border: 1px solid rgb(50, 103, 179);
+  margin-left: 10em;
+}
+.cancel:hover {
+  color: white;
+  background-color: rgb(50, 103, 179);
+  border: 1px solid white;
+}
+
+.success {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-size: small;
+  font-weight: 300;
+}
+@media screen and (max-width: 780px) {
+  section 
+  {
+    padding-left: 10px;
+  } 
+
+  div.subHeader {
+      display: block ;
+  }
+
+  .basics {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+  }
+  #basicsSection,.profileSection, .notificationsSection{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+  .basics,.Profile, .Notifications {
+      align-self: flex-start;
+      justify-self: flex-start;
+      height: max-content;
+      padding-left: 0%;
+      padding-bottom: 20px;
+
+  }
+
+  .notificationsSection, .accountActivity{
+      width: max-content;
+      margin: 0px;
+  }
+
+  .finalButton {
+    display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     margin-left: -8em;
+  }
+}
+
+@media screen and (max-width:1000px) and (min-width:700px) {
+    
+    section 
+  {
+    padding-left: 30px;
+  } 
+    .finalButton {
+        display: flex;
+         flex-direction: row;
+         justify-content: flex-start;
+         /* margin-left: -8em; */
+      } 
+      
+      .Notifications {
+        align-self: flex-start;
+        justify-self: flex-start;
+        height: max-content;
+        padding-left: 0%;
+        padding-bottom: 20px;
+  
+    }
+
+    .notificationsSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 10vw;
+    }
+}

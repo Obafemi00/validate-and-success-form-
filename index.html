@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="your_logo">
+                <img src="herb codes logo-01-1 1.png" alt="my logo" class="my_logo">
+            </div>
+            <div class="social_icons">
+                <div class="facebook">
+                    <i class="fa fa-facebook-f"></i>
+                </div>
+                <div class="twitter">
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <div class="instagram">
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Subheader -->
+        <div class="subHeader">
+            <h2 class="accountSettings">Account Settings</h2>
+            <hr>
+        </div>
+
+        <!-- First form Section Also known as Basics -->
+        <form name="myForm" id="myForm" action="/index.html" method="post">
+            <div class="subSubHeader">
+
+                <!-- container for the basics section -->
+                <div class="basicsSection" id="basicsSection">
+
+                    <!-- container for the Basics Header and paragraph -->
+                    <div class="basics">
+                        <h4>
+                            Basics
+                        </h4>
+                        <small>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa laudantium dignissimos harum
+                            neque sint
+                        </small>
+                    </div>
+
+                    <!-- container for the first form section -->
+                    <div class="form firstFormGroup">
+                        <div class="inputGroup email firstFormGroupDiv">
+                            <label for="email">Email address</label>
+                            <input type="email" autocomplete="on" name="email" required>
+                        </div>
+                        <div class="inputGroup firstFormGroupDiv" >
+                            <label for="password">Password</label>
+
+                            <input type="button" id="btn" onclick="buttonclick()" value="Change your password" name="password" required>
+
+                        </div>
+                        <div class="inputGroup password firstFormGroupDiv" >
+                            <label for="password1">Password</label>
+                            <input type="password" name="password1" id="password1" required>
+                        </div>
+
+                        <div class="inputGroup password firstFormGroupDiv" >
+                            <label for="Confirmpassword">Confirm Password</label>
+                            <input type="password" name="Confirmpassword" required>
+                        </div>
+                        <div class="inputGroup country firstFormGroupDiv">
+                            <label for="countries">Country</label>
+                            <select name="countries" id="Countries" required>
+
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Second form Section Also known as Profile -->
+            <div class="subSubHeader">
+
+                <div class="profileSection">
+
+                    <!-- container for the Profile header and subscript -->
+                    <div class="Profile">
+                        <h4>
+                            Profile
+                        </h4>
+                        <small>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eius obcaecati, sint soluta, beatae
+                        </small>
+                    </div>
+
+                    <!-- container for the Second Form Group -->
+                    <div class="form secondFormGroup" >
+                        <div class="inputGroup fullName">
+                            <div class="firstName">
+                                <label for="firstName" >First Name</label>
+                                <input type="text" class="first_Name" autocomplete="on" name="firstName" required>
+                            </div>
+                            <div class="lastName">
+                                <label for="lastName" >Last Name</label>
+                                <input type="text" class="last_Name" autocomplete="on" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="inputGroup picture secondFormGroupDiv">
+                            <label for="picture">Picture</label>
+
+                            <input type="file" accept="image" value="Change picture" name="picture" required>
+
+                        </div>
+                        <div class="inputGroup username secondFormGroupDiv">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" required>
+                        </div>
+                        <div class="inputGroup aboutyou secondFormGroupDiv">
+                            <label for="aboutyou">About You</label>
+                            <textarea name="aboutyou" id="" cols="30" rows="10" required></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Third Section form Section Also known as Notifications-->
+            <div class="subSubHeader thirdSection">
+                <div class="notificationsSection">
+
+                    <!-- container for the Notifications header and paragraph section -->
+                    <div class="Notifications">
+                        <h4>
+                            Notifications
+                        </h4>
+                        <small>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius obcaecati, sint soluta, beatae
+                        </small>
+                    </div>
+
+                    <!-- container for the Third Form Group -->
+                    <div class="form thirdFormGroup">
+                        <div class="checkbox1 checkbox">
+                            <label for="AccountActivity" class="AccountActivity">
+                                <p>Account Activity</p>
+                                <small>Get Small Information About you anywhere</small>
+                            </label>
+                            <input type="checkbox" name="AccountActivity" id="AccountActivity">
+                            
+                        </div>
+                        <div class="checkbox2 checkbox">
+                            <label for="Meetups" class="Meetups">
+                                <p>Meetups Near you</p>
+                                <small>Get Small Information About you anywhere</small>
+                            </label>
+                            <input type="checkbox" name="Meetups" id="Meetups">
+                        </div>
+                        <div class="checkbox3 checkbox">
+                            <label for="New" class="New">
+                                <p>New for you</p>
+                                <small>Get Small Information About you anywhere</small>
+                            </label>
+                            <input type="checkbox" name="New" id="New">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="finalButton">
+              <button type="submit" class="saveSettings">Save Settings</button>
+              <button type="reset" class="cancel">Cancel</button>
+            </div>
+            
+        </form>
+        <div>
+            <p id="success" style="display: none" class="success">
+                Your settings has been upadated
+            </p>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
