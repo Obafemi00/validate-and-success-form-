@@ -47,6 +47,26 @@ $('#myForm').submit(function(e) {
 })
 
 
+$(document).ready(function() {
+  $('form').on('submit', function(event) {
+        
+      // It returns an array of object 
+      let userinfo = $(this).serializeArray();
+      let user = {};
+      userinfo.forEach((value) => {
+            
+          // Dynamically create an object
+          user[value.name] = value.value;
+      });
+      let url = "https://reqres.in/api/users";
+      $.ajax({
+          method: "POST",
+          url: url,
+          data: user
+      });
+  });
+});
+
 //To validate the form
 
 $("#myForm").validate({
